@@ -1,0 +1,55 @@
+
+
+.white-form{
+    -fx-background-color: #fff;
+}
+
+.textfield{
+    -fx-background-color: transparent;
+    -fx-border-color: #000;
+    -fx-border-width: .5px;
+}
+.textfield:focused{
+    -fx-border-width: 1px;
+    -fx-border-color: dodgerblue;
+}
+
+.btn{
+    -fx-background-color: dodgerblue;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+    -fx-border-color: #000;
+    -fx-border-width: .2px;
+}
+.btn:hover{
+    -fx-background-color: cornflowerblue;
+}
+
+.table-view {
+    -fx-background-color:#0c579e;
+    -fx-background-radius:14 14 0 0;
+    
+    }
+.table-view .column-header-background{
+        -fx-background-color: #0c579e;
+        -fx-background-radius:14;
+        -fx-background-insets: 0 0 10 0;
+       
+        
+        
+    }
+.table-view .column-header, .table-view .filler{
+        -fx-size:50px;
+        -fx-border-width: 0 0 10 0;
+        -fx-background-color:transparent;
+        
+    }
+    
+.table-view .column-header .label {
+        -fx-text-fill: white ;
+    }
+    
+    .table-column{
+        -fx-alignment:CENTER;
+    }
