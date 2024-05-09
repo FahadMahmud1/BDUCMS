@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorflow" prefHeight="543.0" prefWidth="942.0" style="-fx-background-color: #682286;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bducms.ClubinfoController">
+   <children>
+      <Label layoutX="380.0" layoutY="45.0" text="CLUB INSIGHTS" textFill="WHITE">
+         <font>
+            <Font name="Barlow Bold" size="27.0" />
+         </font></Label>
+      <Button layoutX="910.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: white;">
+         <graphic>
+            <FontAwesomeIcon fill="#682286" glyphName="CLOSE" size="1.1em" />
+         </graphic>
+      </Button>
+      <Label layoutX="248.0" layoutY="279.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#left" style="-fx-background-color: white;">
+         <graphic>
+            <FontAwesomeIcon fill="#682286" glyphName="ARROW_LEFT" size="1.1em" />
+         </graphic>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="130.0" layoutX="57.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="263.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="130.0" layoutX="341.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="263.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8f8f8" height="130.0" layoutX="623.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="263.0" />
+      <Label layoutX="92.0" layoutY="123.0" text="Total Club Registration">
+         <font>
+            <Font name="Barlow Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="123.0" text="Total Students">
+         <font>
+            <Font name="Barlow Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="653.0" layoutY="123.0" text="Last Event Participation">
+         <font>
+            <Font name="Barlow Bold" size="19.0" />
+         </font>
+      </Label>
+      <Text fx:id="rowCountLabel" fill="#682286" layoutX="168.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+         <font>
+            <Font name="Oswald Bold" size="45.0" />
+         </font>
+      </Text>
+      <Text fill="#682286" layoutX="439.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="400">
+         <font>
+            <Font name="Oswald Bold" size="45.0" />
+         </font>
+      </Text>
+      <Text fill="#682286" layoutX="722.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100">
+         <font>
+            <Font name="Oswald Bold" size="45.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="253.0" layoutX="56.0" layoutY="259.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="831.0" />
+      <PieChart fx:id="pieChart" layoutX="106.0" layoutY="279.0" prefHeight="218.0" prefWidth="714.0" title="Registration Vs Participation" />
+   </children>
+</AnchorPane>

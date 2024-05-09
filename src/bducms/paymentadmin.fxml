@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="payAnchor" prefHeight="543.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bducms.PaymentadminController">
+   <children>
+      <Label layoutX="577.0" layoutY="116.0" text="SUBMIT PAYMENT INFO" textFill="#0c579e">
+         <font>
+            <Font name="Oswald Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="trx" layoutX="658.0" layoutY="240.0" promptText="Bkash Trxid" />
+      <Label layoutX="587.0" layoutY="240.0" text="TrxID" textFill="#0c579e">
+         <font>
+            <Font name="Oswald Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="685.0" layoutY="368.0" mnemonicParsing="false" onAction="#sbmt" prefHeight="50.0" prefWidth="134.0" style="-fx-background-color: #0c579e;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Oswald Bold" size="17.0" />
+         </font></Button>
+      <TextField fx:id="unid" layoutX="657.0" layoutY="308.0" promptText="Your University ID" />
+      <Label layoutX="540.0" layoutY="308.0" text="Your Uni ID" textFill="#0c579e">
+         <font>
+            <Font name="Oswald Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c579e" height="543.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="462.0" />
+      <Button layoutY="-1.0" mnemonicParsing="false" onAction="#bckBtn" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: white;">
+         <graphic>
+            <FontAwesomeIcon fill="#0c579e" glyphName="HOME" size="1.1em" />
+         </graphic>
+      </Button>
+      <Label layoutX="89.0" layoutY="77.0" text="PAYMENT INSTRUCTION" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="413.0" text="USE REFERENCE CODE: " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="164.0" fitWidth="187.0" layoutX="138.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/nagd.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="168.0" layoutY="328.0" text="SCAN QR CODE" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="431.0" prefHeight="50.0" prefWidth="148.0" text="PROG [ Your ID ]" textFill="WHITE">
+         <font>
+            <Font name="Poppins Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="6.0" text="HOME" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="108.0" text="Step 01" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="682.0" layoutY="152.0" text="Step 02">
+         <font>
+            <Font name="Oswald Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="371.0" text="Payable Amount" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="368.0" text="100" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="371.0" text="TAKA" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
